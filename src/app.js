@@ -24,5 +24,5 @@ function generateDomains() {
 
 window.onload = function() {
   //write your code here
-  generateRandom();
+  generateDomains();
 };
