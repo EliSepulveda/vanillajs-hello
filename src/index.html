@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="bg">
+      <div class="carta-container">
+        <div class="carta">
+          <div id="palo">
+            ♥
+          </div>
+          <div id="numero">
+            2
+          </div>
+          <div id="palo-inverso">
+            ♥
+          </div>
+        </div>
+        <input
+          id="carta-ancho"
+          type="number"
+          placeholder="carta ancho (pulgadas)"
+        />
+        <input
+          id="carta-altura"
+          type="number"
+          placeholder="carta altura (pulgadas)"
+        />
+        <button id="button" onclick="generateRandomCard()">
+          Generate Card
+        </button>
+        <div id="timer"></div>
       </div>
     </div>
   </body>

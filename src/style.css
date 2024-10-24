@@ -1,1 +1,88 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.bg {
+  background-color: greenyellow;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carta {
+  position: relative;
+  margin-top: 100px;
+  height: 3.5in;
+  width: 2.5in;
+  background-color: white;
+  border: 1px solid #000;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.carta-container {
+  display: flex;
+  flex-direction: column; /* Stack the card and button vertically */
+  align-items: center; /* Center the card and button horizontally */
+}
+
+#palo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 72px;
+}
+
+#numero {
+  font-size: 72px;
+  color: black;
+}
+
+#palo-inverso {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 72px;
+  transform: rotate(180deg); /* Rotate to invert */
+}
+
+#button {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#carta-ancho {
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
+}
+#carta-altura {
+  margin-top: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+#timer {
+  margin-top: 30px;
+}
